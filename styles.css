@@ -1,15 +1,15 @@
 :root {
   color-scheme: dark;
-  --bg: #0c0b10;
-  --bg-alt: #15131d;
-  --accent: #c6a575;
-  --accent-2: #f1d8b8;
-  --text: #f6f2ed;
-  --muted: #b7b1a7;
-  --card: rgba(25, 22, 31, 0.8);
-  --glass: rgba(30, 27, 38, 0.6);
-  --border: rgba(255, 255, 255, 0.08);
-  --shadow: 0 40px 120px rgba(0, 0, 0, 0.45);
+  --bg: #3b111d;
+  --bg-alt: #4a1624;
+  --accent: #d6b27c;
+  --accent-2: #f3e2c7;
+  --text: #fbf2e6;
+  --muted: #cbb8a6;
+  --card: rgba(77, 25, 38, 0.85);
+  --glass: rgba(88, 30, 46, 0.6);
+  --border: rgba(255, 236, 214, 0.12);
+  --shadow: 0 40px 120px rgba(30, 8, 15, 0.55);
 }
 
 * {
@@ -20,7 +20,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at top, rgba(48, 39, 64, 0.6), transparent 45%),
+  background: radial-gradient(circle at top, rgba(123, 66, 78, 0.45), transparent 50%),
     var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -64,7 +64,7 @@ video {
 .site-header {
   position: relative;
   padding: 40px 0 120px;
-  background: linear-gradient(160deg, rgba(37, 29, 50, 0.9) 0%, rgba(11, 11, 16, 0.9) 70%);
+  background: linear-gradient(160deg, rgba(96, 32, 47, 0.94) 0%, rgba(35, 10, 17, 0.92) 70%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -160,7 +160,7 @@ video {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(243, 226, 199, 0.08);
   border: 1px solid var(--border);
   padding: 8px 16px;
   border-radius: 999px;
@@ -187,8 +187,8 @@ video {
 }
 
 .btn.primary {
-  background: linear-gradient(120deg, #c6a575, #f1d8b8);
-  color: #1a1410;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #3a1a14;
   box-shadow: var(--shadow);
 }
 
@@ -202,7 +202,7 @@ video {
 }
 
 .btn.ghost:hover {
-  background: rgba(198, 165, 117, 0.2);
+  background: rgba(214, 178, 124, 0.2);
 }
 
 .hero-metrics {
@@ -239,7 +239,7 @@ video {
   position: absolute;
   top: 18px;
   left: 24px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(59, 17, 29, 0.5);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 12px;
@@ -253,8 +253,8 @@ video {
 }
 
 .image-card {
-  background: linear-gradient(135deg, rgba(198, 165, 117, 0.25), rgba(15, 12, 20, 0.9));
-  border: 1px dashed rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, rgba(214, 178, 124, 0.28), rgba(32, 9, 16, 0.92));
+  border: 1px dashed rgba(255, 236, 214, 0.2);
   border-radius: 24px;
   min-height: 140px;
   display: grid;
@@ -312,8 +312,8 @@ video {
 
 .collection-image {
   height: 200px;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.8));
-  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: linear-gradient(120deg, rgba(243, 226, 199, 0.16), rgba(32, 9, 16, 0.92));
+  border: 1px dashed rgba(255, 236, 214, 0.2);
   border-radius: 18px;
   display: grid;
   place-items: center;
@@ -326,7 +326,7 @@ video {
   display: inline-flex;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(198, 165, 117, 0.2);
+  background: rgba(214, 178, 124, 0.2);
   color: var(--accent-2);
   font-size: 11px;
   margin-top: 16px;
@@ -352,7 +352,7 @@ video {
 .story-highlight {
   padding: 20px;
   border-left: 2px solid var(--accent);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(243, 226, 199, 0.08);
   border-radius: 16px;
 }
 
@@ -374,8 +374,8 @@ video {
 
 .story-card {
   min-height: 200px;
-  background: linear-gradient(150deg, rgba(198, 165, 117, 0.2), rgba(10, 10, 16, 0.9));
-  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: linear-gradient(150deg, rgba(214, 178, 124, 0.2), rgba(32, 9, 16, 0.92));
+  border: 1px dashed rgba(255, 236, 214, 0.2);
   border-radius: 22px;
   display: grid;
   place-items: center;
@@ -408,7 +408,7 @@ video {
   margin-top: 40px;
   padding: 30px;
   border-radius: 24px;
-  background: linear-gradient(120deg, rgba(198, 165, 117, 0.25), rgba(15, 12, 24, 0.9));
+  background: linear-gradient(120deg, rgba(214, 178, 124, 0.25), rgba(32, 9, 16, 0.92));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -426,8 +426,8 @@ video {
 }
 
 .gallery-tile {
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.8));
-  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: linear-gradient(120deg, rgba(243, 226, 199, 0.16), rgba(32, 9, 16, 0.92));
+  border: 1px dashed rgba(255, 236, 214, 0.2);
   border-radius: 24px;
   display: grid;
   place-items: center;
@@ -462,8 +462,8 @@ video {
 .map-card {
   min-height: 320px;
   border-radius: 28px;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  background: linear-gradient(120deg, rgba(198, 165, 117, 0.2), rgba(10, 10, 16, 0.9));
+  border: 1px dashed rgba(255, 236, 214, 0.2);
+  background: linear-gradient(120deg, rgba(214, 178, 124, 0.2), rgba(32, 9, 16, 0.92));
   display: grid;
   place-items: center;
   color: var(--muted);
@@ -512,7 +512,7 @@ video {
 
 .contact-form input,
 .contact-form textarea {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(36, 10, 17, 0.6);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 12px 14px;
@@ -533,7 +533,7 @@ video {
 .site-footer {
   padding: 40px 0 20px;
   border-top: 1px solid var(--border);
-  background: #0a090d;
+  background: #2a0b14;
 }
 
 .footer-grid {
