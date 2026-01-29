@@ -3,19 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layali Linz – Emirati & Luxusparfüms</title>
-    <link rel="icon" type="image/x-icon" href="/perfumes/logo.jpg">
+    <title>Layali Linz – Emirati &amp; Luxusparfüms</title>
+    <!--
+      Die aktualisierte Version dieser Seite verbessert die Benutzer‑
+      führung und das visuelle Design: Platzhalter wurden durch
+      hochwertige Illustrationen ersetzt, die Navigation ist besser
+      zugänglich und interne Links scrollen weich. Die Datei
+      styles.css enthält die definierte Farbpalette und Layouts.
+    -->
+    <link rel="icon" type="image/x-icon" href="/perfumes/logo.jpg" />
     <meta
       name="description"
-      content="Layali Linz – Emirati Perfumes & internationale Duftikonen. Entdecke luxuriöse Parfüms im Herzen von Linz."
+      content="Layali Linz – Emirati Perfumes &amp; internationale Duftikonen. Entdecke luxuriöse Parfüms im Herzen von Linz."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Basiskonfiguration: wir laden das originale Stylesheet der bestehenden Seite
+         aus dem Demo-Repository und überschreiben anschließend nur die nötigsten
+         Anpassungen in custom.css. Dadurch bleiben alle ursprünglichen Farben
+         und Layouts erhalten, während moderne Verbesserungen wie sanftes
+         Scrollen und optimierte Bilder integriert werden. -->
+    <link rel="stylesheet" href="https://jonas201422.github.io/layalilinz/styles.css" />
+    <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
     <div class="noise"></div>
@@ -32,7 +45,12 @@
           <a href="#location">Linz Store</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu">
+        <!--
+          Das Burger‑Icon besitzt jetzt ein aria‑label für Screenreader
+          und toggelt die mobile Navigation. aria-controls verweist auf
+          die nav-links.
+        -->
+        <button class="nav-toggle" aria-label="Menü ein‑/ausblenden" aria-expanded="false" aria-controls="mobile-menu">
           <span></span>
           <span></span>
         </button>
@@ -40,11 +58,12 @@
       <div class="container hero">
         <div class="hero-copy">
           <div class="pill">Emirati Perfumes • Luxus • Iconic Scents</div>
-          <h1>Die Duftboutique für Linz –
+          <h1>
+            Die Duftboutique für Linz –
             <span>Layali</span>.
           </h1>
           <p>
-            Opulente Emirati-Perfumes, weltbekannte Klassiker und seltene Duftschätze. Ein Store, der
+            Opulente Emirati‑Perfumes, weltbekannte Klassiker und seltene Duftschätze. Ein Store, der
             Sinne verführt – kuratiert für Linz, Taubenmarkt.
           </p>
           <div class="hero-actions">
@@ -53,7 +72,7 @@
               class="btn ghost"
               href="https://wa.me/436601234567"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Persönliche Beratung
             </a>
@@ -75,7 +94,12 @@
         </div>
         <div class="hero-media">
           <div class="video-frame">
-            <div class="video-badge">Video: Story & Store</div>
+            <div class="video-badge">Video: Story &amp; Store</div>
+            <!--
+              Das Video wurde beibehalten, aber die Autoplay‑Eigenschaft
+              könnte bei Bedarf entfernt werden. Ein Poster bietet einen
+              ansprechenden Fallback.
+            -->
             <video
               autoplay
               muted
@@ -88,14 +112,15 @@
             </video>
           </div>
           <div class="hero-image-grid">
+            <!-- Ersetzte Bilder für hero section -->
             <div class="image-card tall">
-              <img src="perfumes/style3.png" alt="Hero Duftbild in Goldtönen" />
+              <img src="perfumes/style3_new.png" alt="Opulentes Duftbild in Goldtönen" loading="lazy" />
             </div>
             <div class="image-card">
-              <img src="perfumes/style.png" alt="Elegante Flakon-Komposition" />
+              <img src="perfumes/style_new.png" alt="Elegante Flakon‑Komposition" loading="lazy" />
             </div>
             <div class="image-card">
-              <img src="perfumes/style2.png" alt="Luxuriöse Duftinszenierung" />
+              <img src="perfumes/style2_new.png" alt="Luxuriöse Duftinszenierung" loading="lazy" />
             </div>
           </div>
         </div>
@@ -110,25 +135,25 @@
             <h2>Duftwelten, die bleiben.</h2>
           </div>
           <p>
-            Vom opulenten Emirati-Attar bis zur modernen Niche-Kreation: Jede Linie ist handverlesen,
+            Vom opulenten Emirati‑Attar bis zur modernen Niche‑Kreation: Jede Linie ist handverlesen,
             limitiert und bereit für ein neues Statement.
           </p>
         </div>
         <div class="collection-grid">
           <article class="collection-card">
-            <div class="collection-image">Bild: Emirati Essence</div>
+            <img class="collection-image" src="perfumes/gallery1.png" alt="Kollektion Emirati Essence" loading="lazy" />
             <h3>Emirati Essence</h3>
             <p>Amber, Oud, Safran – die ikonische Handschrift des Orients.</p>
             <span class="tag">Premium</span>
           </article>
           <article class="collection-card">
-            <div class="collection-image">Bild: Modern Icons</div>
+            <img class="collection-image" src="perfumes/gallery2.png" alt="Kollektion Modern Icons" loading="lazy" />
             <h3>Modern Icons</h3>
             <p>Berühmte Duftklassiker mit intensiver Sillage.</p>
             <span class="tag">Best Seller</span>
           </article>
           <article class="collection-card">
-            <div class="collection-image">Bild: Niche Atelier</div>
+            <img class="collection-image" src="perfumes/gallery3.png" alt="Kollektion Niche Atelier" loading="lazy" />
             <h3>Niche Atelier</h3>
             <p>Seltene Kompositionen für Kenner:innen.</p>
             <span class="tag">Limited</span>
@@ -143,26 +168,27 @@
           <p class="eyebrow">Layali Linz</p>
           <h2>Die sinnliche Adresse für Parfüms in Linz.</h2>
           <p>
-            Layali vereint Emirati-Tradition mit moderner Duftkultur. Bei uns findest du luxuriöse
+            Layali vereint Emirati‑Tradition mit moderner Duftkultur. Bei uns findest du luxuriöse
             Parfüms, die in Erinnerung bleiben. Unsere Beratung ist persönlich, die Auswahl ist
-            exklusiv, die Atmosphäre wie ein sanftes Oud-Ritual.
+            exklusiv, die Atmosphäre wie ein sanftes Oud‑Ritual.
           </p>
           <div class="story-highlight">
             <h3>“Ein Parfüm ist kein Accessoire – es ist Identität.”</h3>
             <p>– Layali Duftatelier</p>
           </div>
           <div class="social-links">
-            <a href="https://www.instagram.com/layali.emiratesperfume/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/layali.emiratesperfume/" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
-            <a href="https://www.tiktok.com/@layali.perfume" target="_blank" rel="noreferrer">
+            <a href="https://www.tiktok.com/@layali.perfume" target="_blank" rel="noopener noreferrer">
               TikTok
             </a>
           </div>
         </div>
         <div class="story-visual">
-          <div class="story-card">Mood Image 01</div>
-          <div class="story-card">Mood Image 02</div>
+          <!-- Stimmungsvoll gestaltete Bilder ersetzen die Platzhalter -->
+          <img class="story-card" src="perfumes/mood1.png" alt="Stimmungsbild goldene Duftwelt" loading="lazy" />
+          <img class="story-card" src="perfumes/mood2.png" alt="Stimmungsbild romantische Parfumwelt" loading="lazy" />
         </div>
       </div>
     </section>
@@ -175,13 +201,13 @@
             <h2>Dein persönliches Duftprofil.</h2>
           </div>
           <p>
-            Live-Testing, Duftlayering und ein Signature-Finish, das deinen Stil unterstreicht.
+            Live‑Testing, Duftlayering und ein Signature‑Finish, das deinen Stil unterstreicht.
           </p>
         </div>
         <div class="experience-grid">
           <div class="experience-card">
-            <h3>Duftbar & Beratung</h3>
-            <p>Signature-Consulting für Emirati und internationale Düfte.</p>
+            <h3>Duftbar &amp; Beratung</h3>
+            <p>Signature‑Consulting für Emirati und internationale Düfte.</p>
           </div>
           <div class="experience-card">
             <h3>Gift Edit</h3>
@@ -189,7 +215,7 @@
           </div>
           <div class="experience-card">
             <h3>Layering Ritual</h3>
-            <p>Öl + Spray + Mist für einen langanhaltenden Signature-Duft.</p>
+            <p>Öl + Spray + Mist für einen langanhaltenden Signature‑Duft.</p>
           </div>
         </div>
         <div class="experience-banner">
@@ -209,13 +235,13 @@
             <p class="eyebrow">Galerie</p>
             <h2>Bildflächen für deine Produkte.</h2>
           </div>
-          <p>Füge hier deine echten Produktbilder ein – die Layouts sind schon ready.</p>
+          <p>Hier zeigen wir dir unsere Duftlinien – inspiriert von Luxus und Eleganz.</p>
         </div>
         <div class="gallery-grid">
-          <div class="gallery-tile large">Produktbild 01</div>
-          <div class="gallery-tile">Produktbild 02</div>
-          <div class="gallery-tile">Produktbild 03</div>
-          <div class="gallery-tile">Produktbild 04</div>
+          <img class="gallery-tile large" src="perfumes/gallery1.png" alt="Galerie Bild 1" loading="lazy" />
+          <img class="gallery-tile" src="perfumes/gallery2.png" alt="Galerie Bild 2" loading="lazy" />
+          <img class="gallery-tile" src="perfumes/gallery3.png" alt="Galerie Bild 3" loading="lazy" />
+          <img class="gallery-tile" src="perfumes/style_new.png" alt="Galerie Bild 4" loading="lazy" />
         </div>
       </div>
     </section>
@@ -227,7 +253,7 @@
           <h2>Taubenmarkt, Graben 32.</h2>
           <p>
             Im Herzen von Linz – nur wenige Schritte vom Hauptplatz entfernt. Komm vorbei, teste
-            unsere Emirati-Luxusdüfte und finde deinen Signature-Scent.
+            unsere Emirati‑Luxusdüfte und finde deinen Signature‑Scent.
           </p>
           <ul class="location-list">
             <li><strong>Adresse:</strong> Graben 32, 4020 Linz</li>
@@ -239,10 +265,11 @@
         <iframe
           class="map-embed"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5307.796665042047!2d14.286272112341557!3d48.3048067393839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739787ed7cc7d7%3A0x1342ef54234333bc!2sLayali!5e0!3m2!1sde!2sat!4v1769625286447!5m2!1sde!2sat"
-          allowfullscreen=""
+          allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+      </div>
     </section>
 
     <section id="kontakt" class="section contact">
@@ -251,7 +278,7 @@
           <p class="eyebrow">Kontakt</p>
           <h2>Schreib uns für Duftberatung.</h2>
           <p>
-            Du brauchst eine Empfehlung oder willst ein exklusives Emirati-Set? Wir beraten dich
+            Du brauchst eine Empfehlung oder willst ein exklusives Emirati‑Set? Wir beraten dich
             persönlich und schnell.
           </p>
           <div class="contact-cards">
@@ -266,7 +293,7 @@
           </div>
         </div>
         <div class="contact-form">
-          <h3>WhatsApp-Chat</h3>
+          <h3>WhatsApp‑Chat</h3>
           <p>
             Schick uns deine Wunschdüfte direkt per WhatsApp – wir melden uns mit einer schnellen
             Empfehlung.
@@ -275,7 +302,7 @@
             class="btn primary"
             href="https://wa.me/436601234567"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Jetzt per WhatsApp schreiben
           </a>
@@ -288,7 +315,7 @@
       <div class="container footer-grid">
         <div>
           <a class="logo" href="#">Layali Linz</a>
-          <p>Emirati Perfumes & ikonische Düfte in Linz.</p>
+          <p>Emirati Perfumes &amp; ikonische Düfte in Linz.</p>
         </div>
         <div>
           <h4>Besuche uns</h4>
@@ -297,8 +324,8 @@
         </div>
         <div>
           <h4>Social</h4>
-          <a href="https://www.instagram.com/layali.emiratesperfume/" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://www.tiktok.com/@layali.perfume" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="https://www.instagram.com/layali.emiratesperfume/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@layali.perfume" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
       </div>
       <p class="footer-bottom">© 2024 Layali Linz. All rights reserved.</p>

@@ -1,0 +1,54 @@
+/*
+  custom.css – ergänzende Stile für die modernisierte Version der Layali Linz Website.
+  Dieses Stylesheet wird nach dem originalen styles.css geladen und überschreibt
+  nur spezifische Details wie weiches Scrollen, Bildstil und kleinere Layout‑
+  Optimierungen. So bleiben Look & Feel des Originals erhalten und werden
+  gleichzeitig an moderne UX‑Standards angepasst.
+*/
+
+/* Sanftes Scrollen für interne Ankerlinks */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Kacheln der Signature Kollektion: abgerundete Ecken und Schatten */
+.collection-card img.collection-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+/* Story‑Sektion: Bildkarte mit leichter Rundung */
+.story-visual img.story-card {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Galerie: Gitter mit Lücken, abgerundeten Ecken und Schatten */
+.gallery-grid {
+  gap: 1rem;
+}
+.gallery-grid img.gallery-tile {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Große Galerie‑Kacheln (erster Eintrag) */
+.gallery-grid img.gallery-tile.large {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+/* Fix: mobile Navigation schließt sich nach Klick (im Skript) – keine CSS nötig */
+
+/* Anpassungen für Section‑Abstände */
+section {
+  padding-bottom: 4rem;
+}

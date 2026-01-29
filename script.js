@@ -7,4 +7,15 @@ if (navToggle && navLinks) {
     navToggle.setAttribute("aria-expanded", String(!isExpanded));
     navLinks.classList.toggle("nav-open");
   });
+
+  /*
+    Schließe das mobile Menü, wenn ein Navigationslink geklickt wird. Dies
+    verbessert die Benutzerführung auf kleineren Geräten.
+  */
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("nav-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
 }
