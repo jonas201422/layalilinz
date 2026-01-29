@@ -52,3 +52,70 @@ html {
 section {
   padding-bottom: 4rem;
 }
+
+/*
+  Hero section enhancements
+  -------------------------
+  Die bestehende Hero‑Sektion aus dem ursprünglichen Stylesheet arbeitet mit
+  einem generischen Grid‑Layout, bei dem die Medienelemente (Video und Bilder)
+  untereinander gestapelt werden. Das führt zu unruhigen Leerräumen und
+  unterschiedlich hohen Karten – wie in der Kundensichtung beschrieben. Um
+  einen harmonischen Aufbau zu erreichen, definieren wir hier ein klares
+  zweispaltiges Raster: links die Textinhalte, rechts ein Medien‑Bereich,
+  der wiederum in zwei Spalten organisiert ist (Video und Bildgitter). Durch
+  die Verwendung von CSS‑Property `aspect‑ratio` behalten alle Kacheln eine
+  einheitliche Höhe bei und es entsteht ein klares, luxuriöses Erscheinungsbild.
+*/
+
+/* Größere Bildschirme: Hero in zwei Spalten aufteilen */
+@media (min-width: 900px) {
+  /* Auf größeren Bildschirmen stehen Text und Medien nebeneinander */
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  /* Medienbereich: zwei Spalten für Video und Bildgitter */
+  .hero-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  /* Einheitliche Höhen statt Seitenverhältnissen – sorgt für sichtbare Inhalte */
+  .hero-media .video-frame {
+    height: 460px;
+  }
+  .hero-image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-image-grid .image-card {
+    height: 150px;
+  }
+}
+
+/* Mobile Optimierung: Weniger Höhe, nebeneinander platzierte Bilder */
+@media (max-width: 899px) {
+  /* Auf mobilen Geräten stapeln sich Text und Medien */
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  /* Das Video nimmt die volle Breite ein und erhält eine fixe Höhe für Sichtbarkeit */
+  .hero-media .video-frame {
+    height: 240px;
+  }
+  /* Das Bildgitter ist zweispaltig, damit nicht zu viele Bilder untereinander stehen */
+  .hero-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+  .hero-image-grid .image-card {
+    height: 120px;
+  }
+}
