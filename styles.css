@@ -623,3 +623,21 @@ video {
     grid-row: span 1;
   }
 }
+@media (min-width: 901px) {
+  .hero-media {
+    max-width: 460px;      /* gesamte rechte Spalte schmaler */
+    justify-self: end;     /* rechts ausrichten */
+  }
+
+  .video-frame {
+    max-width: 460px;      /* Frame nicht so breit */
+    margin-left: auto;
+  }
+
+  /* Wichtig: überschreibt dein "video { height:100% }" */
+  .video-frame video {
+    width: 100%;
+    height: clamp(420px, 60vh, 620px); /* kleiner, aber responsiv */
+    object-fit: cover;
+  }
+}
